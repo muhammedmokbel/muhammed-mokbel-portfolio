@@ -169,17 +169,18 @@ export default function Hero() {
             </motion.span>
           ))}
         </motion.div>
-      </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-500"
-        animate={{ y: [0, 8, 0] }}
-        transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-      >
-        <span className="text-xs tracking-widest uppercase">Scroll</span>
-        <ArrowDown size={16} />
-      </motion.div>
+        {/* Scroll indicator */}
+        <motion.a
+          href="#about"
+          className="flex flex-col items-center gap-2 text-gray-500 hover:text-purple-400 transition-colors cursor-pointer mt-4 p-4"
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+        >
+          <span className="text-xs tracking-widest uppercase">Scroll</span>
+          <ArrowDown size={16} />
+        </motion.a>
+      </div>
     </section>
   );
 }
