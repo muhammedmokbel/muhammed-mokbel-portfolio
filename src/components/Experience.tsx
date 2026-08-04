@@ -70,7 +70,6 @@ const jobs: Job[] = [
     type: 'senior',
     isConsultant: true,
     bullets: [
-      'Created scalable, highly available, and reliable software to withstand heavy user traffic.',
       'Developed web applications using Agile and continuous delivery processes.',
       'Improved coding of JavaScript and CSS to enhance user experience and functionality.',
     ],

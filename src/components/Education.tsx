@@ -8,7 +8,8 @@ const education = [
     degree: "Master's — Computer & Information Science",
     institution: 'Ain Shams University',
     location: 'Cairo, Egypt',
-    period: 'Feb 2024',
+    period: 'Feb 2024 — Present',
+    inProgress: true,
     icon: GraduationCap,
     type: 'masters',
     desc: 'Advanced studies in computer science, research, and information systems at one of Egypt\'s leading universities.',
@@ -86,6 +87,11 @@ export default function Education() {
                       }`}>
                         {edu.type === 'masters' ? "Master's Degree" : "Bachelor's Degree"}
                       </span>
+                      {(edu as any).inProgress && (
+                        <span className="inline-block ml-2 px-2.5 py-1 rounded-full text-xs font-bold bg-amber-500/15 text-amber-400 border border-amber-500/25">
+                          In Progress
+                        </span>
+                      )}
 
                       <h3 className="text-xl font-bold text-white mb-1 group-hover:text-purple-200 transition-colors leading-snug">
                         {edu.degree}
