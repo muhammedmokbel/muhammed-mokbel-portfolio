@@ -60,7 +60,7 @@ function BrowserMockup() {
       {/* Viewport — fixed height, image scrolls on hover */}
       <div className="relative overflow-hidden bg-white" style={{ height: '420px' }}>
         <motion.img
-          src="/voyance-fullpage.png"
+          src={import.meta.env.BASE_URL + 'voyance-fullpage.png'}
           alt="Voyance Health — Full Page Screenshot"
           className="w-full block"
           style={{ transformOrigin: 'top center' }}

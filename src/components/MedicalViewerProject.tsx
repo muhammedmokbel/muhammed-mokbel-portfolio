@@ -8,23 +8,23 @@ import ClassfitProject from './ClassfitProject';
 
 const screenshots = [
   {
-    src: '/viewer_1.webp',
+    src: `${import.meta.env.BASE_URL}viewer_1.webp`,
     caption: 'C-Spine analysis with lateral cervical angle measurements',
   },
   {
-    src: '/viewer_2.webp',
+    src: `${import.meta.env.BASE_URL}viewer_2.webp`,
     caption: 'Lumbar spine & pelvis with multi-point measurement overlay',
   },
   {
-    src: '/viewer_3.webp',
+    src: `${import.meta.env.BASE_URL}viewer_3.webp`,
     caption: 'Cervical spine lateral view with vertebral annotation tools',
   },
   {
-    src: '/viewer_4.webp',
+    src: `${import.meta.env.BASE_URL}viewer_4.webp`,
     caption: 'Advanced angle & length annotation on cervical X-ray',
   },
   {
-    src: '/viewer_5.webp',
+    src: `${import.meta.env.BASE_URL}viewer_5.webp`,
     caption: 'Multi-cell view: side-by-side DICOM image comparison',
   },
 ];

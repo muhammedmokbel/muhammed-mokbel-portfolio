@@ -90,7 +90,7 @@ function VideoPlayer() {
     >
       <video
         ref={videoRef}
-        src="/screen-capture.webm"
+        src={import.meta.env.BASE_URL + 'screen-capture.webm'}
         muted
         playsInline
         preload="metadata"

@@ -4,28 +4,28 @@ import { X, Quote, MessageCircle } from 'lucide-react';
 
 const testimonials = [
   {
-    image: '/whatapp_1.jpg',
+    image: `${import.meta.env.BASE_URL}whatapp_1.jpg`,
     quote:
       "I never wanted to miss a single session — every class was invaluable. When I get stuck at work, I take a deep breath and think the way you taught me to think. Sessions with you were impossible to skip and worth every minute.",
     role: 'Bootcamp Student',
     stars: 5,
   },
   {
-    image: '/whatapp_2.jpg',
+    image: `${import.meta.env.BASE_URL}whatapp_2.jpg`,
     quote:
       "Everything I know in frontend, I owe to you. Your effort in the course is deeply appreciated. Your hard work paid off — I just landed my first freelance project on Fiverr right after the course!",
     role: 'Bootcamp Student',
     stars: 5,
   },
   {
-    image: '/whatapp_3.jpg',
+    image: `${import.meta.env.BASE_URL}whatapp_3.jpg`,
     quote:
       "Thank you so much, Engineer — we'll miss you dearly! I already built a project and submitted it to Fiverr and got accepted. All the credit goes back to you, naturally.",
     role: 'Bootcamp Student',
     stars: 5,
   },
   {
-    image: '/whatapp_4.jpg',
+    image: `${import.meta.env.BASE_URL}whatapp_4.jpg`,
     quote:
       "I'm so proud to have met you. Your teaching technique is outstanding — I'm now studying Angular on my own because you gave me the confidence to tackle anything. Genuinely happy to have known you.",
     role: 'Bootcamp Student',

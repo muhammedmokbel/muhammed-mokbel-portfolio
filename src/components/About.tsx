@@ -89,7 +89,7 @@ export default function About() {
                 {/* Actual photo */}
                 <div className="relative w-full h-full rounded-3xl overflow-hidden z-10">
                   <img
-                    src="/muhammedmokbel.jpeg"
+                    src={import.meta.env.BASE_URL + 'muhammedmokbel.jpeg'}
                     alt="Muhammed Mokbel"
                     className="w-full h-full object-cover object-top"
                     style={{ filter: 'brightness(1.05) contrast(1.05) saturate(1.1)' }}

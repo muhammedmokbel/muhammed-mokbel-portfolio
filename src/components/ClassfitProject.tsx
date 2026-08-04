@@ -87,7 +87,7 @@ function BrowserMockup() {
       {/* Viewport with scroll-on-hover */}
       <div className="relative overflow-hidden bg-white" style={{ height: '420px' }}>
         <motion.img
-          src="/classfit-fullpage.png"
+          src={import.meta.env.BASE_URL + 'classfit-fullpage.png'}
           alt="ClassFit Branded Apps — Full Page"
           className="w-full block"
           style={{ transformOrigin: 'top center' }}
