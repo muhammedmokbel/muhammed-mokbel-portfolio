@@ -1,0 +1,336 @@
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="1">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- ═══════════════════════════════ TITLE ═══════════════════════════════ -->
+    <mxCell id="2" value="Voyance Cloud PACS — Micro Frontend Architecture"
+      style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=24;fontStyle=1;fontColor=#1a1a2e;"
+      vertex="1" parent="1">
+      <mxGeometry x="20" y="20" width="1260" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="3" value="TypeScript · React · Redux Saga · Module Federation (Webpack 5)"
+      style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontColor=#555577;"
+      vertex="1" parent="1">
+      <mxGeometry x="20" y="58" width="1260" height="22" as="geometry" />
+    </mxCell>
+
+    <!-- ═══════════════════════════════ SHELL / HOST ═══════════════════════════════ -->
+    <mxCell id="10" value="&lt;b&gt;🏠  Shell Application  (Host)&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:11px;font-weight:normal;&quot;&gt;Module Federation Host · React 18 · TypeScript · React Router&lt;/font&gt;"
+      style="swimlane;whiteSpace=wrap;html=1;fillColor=#EDE7F6;strokeColor=#7E57C2;strokeWidth=3;fontSize=14;fontColor=#4527A0;startSize=52;rounded=1;arcSize=2;shadow=1;"
+      vertex="1" parent="1">
+      <mxGeometry x="20" y="90" width="1260" height="490" as="geometry" />
+    </mxCell>
+
+    <!-- ══════════ MEDICAL VIEWER MFE ══════════ -->
+    <mxCell id="20" value="&lt;b&gt;🔬  Medical Viewer&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:10px;font-weight:normal;&quot;&gt;Micro Frontend — Remote&lt;/font&gt;"
+      style="swimlane;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#3F51B5;strokeWidth=2;fontSize=13;fontColor=#1A237E;startSize=44;rounded=1;arcSize=4;shadow=1;"
+      vertex="1" parent="10">
+      <mxGeometry x="15" y="62" width="370" height="320" as="geometry" />
+    </mxCell>
+
+    <mxCell id="21" value="DICOM Renderer"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C5CAE9;strokeColor=#3F51B5;fontSize=11;fontStyle=0;"
+      vertex="1" parent="20">
+      <mxGeometry x="12" y="54" width="163" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="22" value="Annotation Tools"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C5CAE9;strokeColor=#3F51B5;fontSize=11;"
+      vertex="1" parent="20">
+      <mxGeometry x="193" y="54" width="163" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="23" value="Window Leveling"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C5CAE9;strokeColor=#3F51B5;fontSize=11;"
+      vertex="1" parent="20">
+      <mxGeometry x="12" y="100" width="163" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="24" value="Cine / Stack Playback"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C5CAE9;strokeColor=#3F51B5;fontSize=11;"
+      vertex="1" parent="20">
+      <mxGeometry x="193" y="100" width="163" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="25" value="Multi-Cell Layout"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C5CAE9;strokeColor=#3F51B5;fontSize=11;"
+      vertex="1" parent="20">
+      <mxGeometry x="12" y="146" width="163" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="26" value="DICOM Metadata / Tags"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C5CAE9;strokeColor=#3F51B5;fontSize=11;"
+      vertex="1" parent="20">
+      <mxGeometry x="193" y="146" width="163" height="36" as="geometry" />
+    </mxCell>
+
+    <mxCell id="27" value="⚡  viewerSlice.ts  |  📡  viewerSaga.ts (TypeScript)"
+      style="text;html=1;strokeColor=#3F51B5;fillColor=#dde0f5;align=center;verticalAlign=middle;fontSize=10;rounded=1;fontStyle=1;"
+      vertex="1" parent="20">
+      <mxGeometry x="12" y="196" width="344" height="38" as="geometry" />
+    </mxCell>
+    <mxCell id="28" value="🔗  Google Healthcare API (DICOM Web)  ·  Orthanc Server"
+      style="text;html=1;strokeColor=#7986CB;fillColor=#E3F2FD;align=center;verticalAlign=middle;fontSize=10;rounded=1;"
+      vertex="1" parent="20">
+      <mxGeometry x="12" y="246" width="344" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="29" value="🌐  live: vpax.ai"
+      style="text;html=1;strokeColor=#1565C0;fillColor=#BBDEFB;align=center;verticalAlign=middle;fontSize=10;rounded=1;fontStyle=2;"
+      vertex="1" parent="20">
+      <mxGeometry x="12" y="292" width="344" height="22" as="geometry" />
+    </mxCell>
+
+    <!-- ══════════ MEDICAL DASHBOARD MFE ══════════ -->
+    <mxCell id="30" value="&lt;b&gt;📊  Medical Dashboard&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:10px;font-weight:normal;&quot;&gt;Micro Frontend — Remote&lt;/font&gt;"
+      style="swimlane;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#388E3C;strokeWidth=2;fontSize=13;fontColor=#1B5E20;startSize=44;rounded=1;arcSize=4;shadow=1;"
+      vertex="1" parent="10">
+      <mxGeometry x="445" y="62" width="370" height="320" as="geometry" />
+    </mxCell>
+
+    <mxCell id="31" value="Patient Management"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#388E3C;fontSize=11;"
+      vertex="1" parent="30">
+      <mxGeometry x="12" y="54" width="163" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="32" value="Study Browser"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#388E3C;fontSize=11;"
+      vertex="1" parent="30">
+      <mxGeometry x="193" y="54" width="163" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="33" value="Reports &amp; Analytics"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#388E3C;fontSize=11;"
+      vertex="1" parent="30">
+      <mxGeometry x="12" y="100" width="163" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="34" value="Worklist"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#388E3C;fontSize=11;"
+      vertex="1" parent="30">
+      <mxGeometry x="193" y="100" width="163" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="35" value="Auth &amp; User Roles"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#388E3C;fontSize=11;"
+      vertex="1" parent="30">
+      <mxGeometry x="12" y="146" width="163" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="36" value="Notifications"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#388E3C;fontSize=11;"
+      vertex="1" parent="30">
+      <mxGeometry x="193" y="146" width="163" height="36" as="geometry" />
+    </mxCell>
+
+    <mxCell id="37" value="⚡  dashboardSlice.ts  |  📡  dashboardSaga.ts (TypeScript)"
+      style="text;html=1;strokeColor=#388E3C;fillColor=#ddf0dd;align=center;verticalAlign=middle;fontSize=10;rounded=1;fontStyle=1;"
+      vertex="1" parent="30">
+      <mxGeometry x="12" y="196" width="344" height="38" as="geometry" />
+    </mxCell>
+    <mxCell id="38" value="🔗  Firebase (Auth · Firestore · Storage)  ·  Express REST API"
+      style="text;html=1;strokeColor=#66BB6A;fillColor=#E3F2FD;align=center;verticalAlign=middle;fontSize=10;rounded=1;"
+      vertex="1" parent="30">
+      <mxGeometry x="12" y="246" width="344" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="39" value="RTK Query for data fetching"
+      style="text;html=1;strokeColor=#81C784;fillColor=#F1F8E9;align=center;verticalAlign=middle;fontSize=10;rounded=1;fontStyle=2;"
+      vertex="1" parent="30">
+      <mxGeometry x="12" y="292" width="344" height="22" as="geometry" />
+    </mxCell>
+
+    <!-- ══════════ STORE MFE ══════════ -->
+    <mxCell id="40" value="&lt;b&gt;🗄️  Store Module&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:10px;font-weight:normal;&quot;&gt;Shared State — Exposed via MFE&lt;/font&gt;"
+      style="swimlane;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#F57C00;strokeWidth=2;fontSize=13;fontColor=#E65100;startSize=44;rounded=1;arcSize=4;shadow=1;"
+      vertex="1" parent="10">
+      <mxGeometry x="875" y="62" width="370" height="320" as="geometry" />
+    </mxCell>
+
+    <mxCell id="41" value="Redux Toolkit (RTK)"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#F57C00;fontSize=11;fontStyle=1;"
+      vertex="1" parent="40">
+      <mxGeometry x="12" y="54" width="163" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="42" value="RTK Query"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#F57C00;fontSize=11;"
+      vertex="1" parent="40">
+      <mxGeometry x="193" y="54" width="163" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="43" value="Redux Saga Middleware"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#F57C00;fontSize=11;fontStyle=1;"
+      vertex="1" parent="40">
+      <mxGeometry x="12" y="100" width="344" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="44" value="rootReducer.ts"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#F57C00;fontSize=11;"
+      vertex="1" parent="40">
+      <mxGeometry x="12" y="146" width="163" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="45" value="rootSaga.ts"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#F57C00;fontSize=11;"
+      vertex="1" parent="40">
+      <mxGeometry x="193" y="146" width="163" height="36" as="geometry" />
+    </mxCell>
+
+    <mxCell id="46" value="⚡  TS Interfaces · Action Types · Typed Selectors · Store Types"
+      style="text;html=1;strokeColor=#F57C00;fillColor=#fff3dd;align=center;verticalAlign=middle;fontSize=10;rounded=1;fontStyle=1;"
+      vertex="1" parent="40">
+      <mxGeometry x="12" y="196" width="344" height="38" as="geometry" />
+    </mxCell>
+    <mxCell id="47" value="🔗  Shared across ALL MFEs via Module Federation exposes"
+      style="text;html=1;strokeColor=#FFB74D;fillColor=#FFF8E1;align=center;verticalAlign=middle;fontSize=10;rounded=1;"
+      vertex="1" parent="40">
+      <mxGeometry x="12" y="246" width="344" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="48" value="configureStore  ·  StoreProvider exported"
+      style="text;html=1;strokeColor=#FFA726;fillColor=#FFF3E0;align=center;verticalAlign=middle;fontSize=10;rounded=1;fontStyle=2;"
+      vertex="1" parent="40">
+      <mxGeometry x="12" y="292" width="344" height="22" as="geometry" />
+    </mxCell>
+
+    <!-- ══════════ EVENT BUS ══════════ -->
+    <mxCell id="50" value="📡  Cross-MFE Event Bus  ·  CustomEvent API  ·  Shared React Context  ·  Window Message Passing"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4EC;strokeColor=#C2185B;strokeWidth=2;fontSize=12;fontColor=#880E4F;fontStyle=1;shadow=1;"
+      vertex="1" parent="10">
+      <mxGeometry x="15" y="398" width="1230" height="40" as="geometry" />
+    </mxCell>
+
+    <!-- ══════════ MODULE FEDERATION ══════════ -->
+    <mxCell id="55" value="⚙️  Module Federation  (webpack.config.ts)  —  exposes: Viewer · Dashboard · Store  |  shared: React · Redux · TypeScript Types"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2F1;strokeColor=#00796B;strokeWidth=2;fontSize=12;fontColor=#004D40;fontStyle=1;shadow=1;"
+      vertex="1" parent="10">
+      <mxGeometry x="15" y="452" width="1230" height="32" as="geometry" />
+    </mxCell>
+
+    <!-- ═══════════════════════════════ BACKEND LAYER ═══════════════════════════════ -->
+    <mxCell id="60" value="&lt;b&gt;☁️  Backend / External Services&lt;/b&gt;"
+      style="swimlane;whiteSpace=wrap;html=1;fillColor=#ECEFF1;strokeColor=#546E7A;strokeWidth=2;fontSize=14;fontColor=#263238;startSize=36;rounded=1;arcSize=2;shadow=1;"
+      vertex="1" parent="1">
+      <mxGeometry x="20" y="610" width="1260" height="130" as="geometry" />
+    </mxCell>
+
+    <mxCell id="61" value="🏥  Google Healthcare API&lt;br/&gt;&lt;i&gt;DICOM Web · FHIR&lt;/i&gt;"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B0BEC5;strokeColor=#546E7A;fontSize=12;shadow=1;"
+      vertex="1" parent="60">
+      <mxGeometry x="20" y="44" width="270" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="62" value="🔥  Firebase&lt;br/&gt;&lt;i&gt;Auth · Firestore · Cloud Storage&lt;/i&gt;"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B0BEC5;strokeColor=#546E7A;fontSize=12;shadow=1;"
+      vertex="1" parent="60">
+      <mxGeometry x="315" y="44" width="270" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="63" value="🌐  Express REST API&lt;br/&gt;&lt;i&gt;Node.js · TypeScript&lt;/i&gt;"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B0BEC5;strokeColor=#546E7A;fontSize=12;shadow=1;"
+      vertex="1" parent="60">
+      <mxGeometry x="610" y="44" width="270" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="64" value="📦  DICOM Server&lt;br/&gt;&lt;i&gt;Orthanc · DICOMweb Standard&lt;/i&gt;"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B0BEC5;strokeColor=#546E7A;fontSize=12;shadow=1;"
+      vertex="1" parent="60">
+      <mxGeometry x="905" y="44" width="270" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- ═══════════════════════════════ EDGES ═══════════════════════════════ -->
+
+    <!-- MFEs → Event Bus (inside shell, all relative to shell parent) -->
+    <mxCell id="80" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#C2185B;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.2;entryY=0;"
+      edge="1" source="20" target="50" parent="10">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="81" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#C2185B;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;"
+      edge="1" source="30" target="50" parent="10">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="82" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#C2185B;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.82;entryY=0;"
+      edge="1" source="40" target="50" parent="10">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Store MFE ← → Viewer (share state) -->
+    <mxCell id="83" value="dispatch / select" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#7E57C2;strokeWidth=2;dashed=1;fontSize=10;fontColor=#7E57C2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;"
+      edge="1" source="20" target="40" parent="10">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="400" y="222" />
+          <mxPoint x="400" y="222" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Store MFE ← → Dashboard (share state) -->
+    <mxCell id="84" value="dispatch / select" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#7E57C2;strokeWidth=2;dashed=1;fontSize=10;fontColor=#7E57C2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;"
+      edge="1" source="30" target="40" parent="10">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Shell → Backend: Redux Saga async calls (absolute edges between different parents) -->
+    <mxCell id="85" value="Saga: call()" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#F57C00;strokeWidth=2;dashed=1;fontSize=11;fontColor=#E65100;fontStyle=1;"
+      edge="1" source="20" target="61" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="86" value="Saga: call()" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#F57C00;strokeWidth=2;dashed=1;fontSize=11;fontColor=#E65100;fontStyle=1;"
+      edge="1" source="30" target="62" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="87" value="Saga: call()" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#F57C00;strokeWidth=2;dashed=1;fontSize=11;fontColor=#E65100;fontStyle=1;"
+      edge="1" source="40" target="63" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="88" value="DICOMweb" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#3F51B5;strokeWidth=2;dashed=1;fontSize=11;fontColor=#1A237E;fontStyle=1;"
+      edge="1" source="20" target="64" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ═══════════════════════════════ LEGEND ═══════════════════════════════ -->
+    <mxCell id="90" value="Legend"
+      style="text;html=1;strokeColor=none;fillColor=none;fontSize=12;fontStyle=1;fontColor=#333;"
+      vertex="1" parent="1">
+      <mxGeometry x="20" y="760" width="80" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="91" value="Medical Viewer MFE"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#3F51B5;fontSize=11;"
+      vertex="1" parent="1">
+      <mxGeometry x="20" y="790" width="165" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="92" value="Dashboard MFE"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#388E3C;fontSize=11;"
+      vertex="1" parent="1">
+      <mxGeometry x="200" y="790" width="165" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="93" value="Store (Redux Saga)"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#F57C00;fontSize=11;"
+      vertex="1" parent="1">
+      <mxGeometry x="380" y="790" width="165" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="94" value="Event Bus"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4EC;strokeColor=#C2185B;fontSize=11;"
+      vertex="1" parent="1">
+      <mxGeometry x="560" y="790" width="165" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="95" value="Module Federation"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2F1;strokeColor=#00796B;fontSize=11;"
+      vertex="1" parent="1">
+      <mxGeometry x="740" y="790" width="165" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="96" value="🔷  TypeScript end-to-end"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1565C0;strokeColor=#0D47A1;fontSize=11;fontColor=#FFFFFF;fontStyle=1;"
+      vertex="1" parent="1">
+      <mxGeometry x="920" y="790" width="180" height="30" as="geometry" />
+    </mxCell>
+
+    <!-- Saga flow legend arrows -->
+    <mxCell id="97" value="Saga async call()" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#F57C00;strokeWidth=2;fontSize=10;fontColor=#E65100;endArrow=open;endFill=0;"
+      edge="1" parent="1">
+      <mxGeometry x="20" y="835" width="160" height="20" as="geometry">
+        <mxPoint x="20" y="845" as="sourcePoint" />
+        <mxPoint x="180" y="845" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="98" value="dispatch / select" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#7E57C2;strokeWidth=2;fontSize=10;fontColor=#7E57C2;endArrow=open;endFill=0;"
+      edge="1" parent="1">
+      <mxGeometry x="20" y="835" width="160" height="20" as="geometry">
+        <mxPoint x="300" y="845" as="sourcePoint" />
+        <mxPoint x="460" y="845" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="99" value="Event / Context" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#C2185B;strokeWidth=2;fontSize=10;fontColor=#880E4F;endArrow=open;endFill=0;"
+      edge="1" parent="1">
+      <mxGeometry x="20" y="835" width="160" height="20" as="geometry">
+        <mxPoint x="580" y="845" as="sourcePoint" />
+        <mxPoint x="740" y="845" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+
+  </root>
+</mxGraphModel>
