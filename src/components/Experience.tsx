@@ -45,7 +45,21 @@ const jobs: Job[] = [
     ],
     tags: ['React', 'Micro Frontend', 'JavaScript', 'CSS', 'TypeScript'],
   },
-  {
+    {
+    role: 'Senior Frontend Engineer',
+    company: 'Munjz',
+    location: 'Saudi Arabia (Remote)',
+    period: 'Feb 2023 — May 2023',
+    type: 'senior',
+    isConsultant: true,
+    bullets: [
+      'Developed web applications using Agile and continuous delivery processes.',
+      'Improved coding of JavaScript and CSS to enhance user experience and functionality.',
+    ],
+    tags: ['React', 'JavaScript', 'RTK Query', 'Material UI'],
+    link: 'https://marafeq.munjz.com',
+  },
+    {
     role: 'Senior Frontend Engineer',
     company: 'Voyance Technology',
     location: 'Cairo, Egypt',
@@ -63,20 +77,6 @@ const jobs: Job[] = [
     link: 'https://voyance.health',
   },
   {
-    role: 'Senior Frontend Engineer',
-    company: 'Munjz',
-    location: 'Saudi Arabia (Remote)',
-    period: 'Feb 2023 — May 2023',
-    type: 'senior',
-    isConsultant: true,
-    bullets: [
-      'Developed web applications using Agile and continuous delivery processes.',
-      'Improved coding of JavaScript and CSS to enhance user experience and functionality.',
-    ],
-    tags: ['React', 'JavaScript', 'RTK Query', 'Material UI'],
-    link: 'https://marafeq.munjz.com',
-  },
-  {
     role: 'Frontend Engineer',
     company: 'Venture Appital',
     location: 'Alexandria, Egypt',
@@ -90,6 +90,8 @@ const jobs: Job[] = [
     ],
     tags: ['React', 'JavaScript', 'CSS', 'Bootstrap'],
   },
+
+
   {
     role: 'Frontend Instructor',
     company: 'Private Frontend Bootcamp',
