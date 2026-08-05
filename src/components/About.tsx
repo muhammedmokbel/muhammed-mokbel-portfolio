@@ -7,7 +7,7 @@ const stats = [
   { value: '6+', label: 'Years Experience', icon: Calendar },
   { value: '5', label: 'Companies', icon: MapPin },
   { value: '4', label: 'Production Projects', icon: Layers },
-  { value: '50+', label: 'Team Members Led', icon: Users },
+  { value: '50+', label: 'People Worked With', icon: Users },
 ];
 
 const traits = [
