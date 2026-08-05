@@ -7,6 +7,7 @@ import Experience from './components/Experience'
 import Skills from './components/Skills'
 import MedicalViewerProject from './components/MedicalViewerProject'
 import Education from './components/Education'
+import Certifications from './components/Certifications'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -23,6 +24,7 @@ export default function App() {
         <Skills />
         <MedicalViewerProject />
         <Education />
+        <Certifications />
         <Testimonials />
         <Contact />
       </main>

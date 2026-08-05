@@ -38,8 +38,6 @@ function PhoneFrame({ src, alt }: { src: string; alt: string }) {
     <div className="relative mx-auto w-[200px]">
       {/* Phone shell */}
       <div className="relative rounded-[2rem] border-[6px] border-white/10 bg-black shadow-2xl overflow-hidden">
-        {/* Notch */}
-        <div className="absolute top-2 left-1/2 -translate-x-1/2 w-16 h-4 bg-black rounded-full z-10" />
         <img src={src} alt={alt} className="w-full object-cover" />
       </div>
       {/* Glow */}
