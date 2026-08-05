@@ -112,7 +112,7 @@ export default function Hero() {
             Get in Touch
           </motion.a>
           <motion.a
-            href={import.meta.env.BASE_URL + 'Muhammed_Mokbel_-_Software_Engineer.pdf'}
+            href={import.meta.env.BASE_URL + 'Muhammed_Mokbel_-_Software_Engineer_latest.pdf'}
             download="Muhammed_Mokbel_CV.pdf"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
