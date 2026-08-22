@@ -146,9 +146,11 @@ function VideoPlayer() {
             >
               {muted ? <VolumeX size={17} /> : <Volume2 size={17} />}
             </button>
-            <span className="text-xs text-white/60 font-mono tabular-nums">
-              {fmt((progress / 100) * duration)} / {fmt(duration)}
-            </span>
+            {duration > 0 && isFinite(duration) && (
+              <span className="text-xs text-white/60 font-mono tabular-nums">
+                {fmt((progress / 100) * duration)} / {fmt(duration)}
+              </span>
+            )}
           </div>
           <button
             onClick={handleFullscreen}
