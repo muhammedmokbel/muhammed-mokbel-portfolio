@@ -35,7 +35,7 @@ const testimonials = [
 
 function PhoneFrame({ src, alt }: { src: string; alt: string }) {
   return (
-    <div className="relative mx-auto w-[200px]">
+    <div className="relative mx-auto w-[150px] sm:w-[180px]">
       {/* Phone shell */}
       <div className="relative rounded-[2rem] border-[6px] border-white/10 bg-black shadow-2xl overflow-hidden">
         <img src={src} alt={alt} className="w-full object-cover" />
@@ -77,7 +77,7 @@ export default function Testimonials() {
               Student Feedback · WhatsApp
             </span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-black text-white tracking-tight">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight">
             What My <span className="gradient-text">Students Say</span>
           </h2>
           <p className="mt-4 text-gray-400 max-w-lg">
@@ -93,7 +93,7 @@ export default function Testimonials() {
               initial={{ opacity: 0, y: 40 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.12 }}
-              className="group relative rounded-2xl p-6 bg-white/[0.03] border border-white/8 hover:border-emerald-500/25 hover:bg-white/[0.05] transition-all duration-300 flex gap-5"
+              className="group relative rounded-2xl p-5 sm:p-6 bg-white/[0.03] border border-white/8 hover:border-emerald-500/25 hover:bg-white/[0.05] transition-all duration-300 flex flex-col sm:flex-row gap-4 sm:gap-5"
             >
               {/* Subtle green glow on hover */}
               <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
@@ -102,7 +102,7 @@ export default function Testimonials() {
               {/* Phone thumbnail — clickable */}
               <button
                 onClick={() => setLightbox(t.image)}
-                className="flex-shrink-0 relative"
+                className="flex-shrink-0 relative self-center sm:self-start"
                 title="View original message"
               >
                 <PhoneFrame src={t.image} alt={`Student feedback ${i + 1}`} />

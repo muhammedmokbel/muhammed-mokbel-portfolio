@@ -177,7 +177,7 @@ export default function VoyanceProject() {
             All Green
           </span>
         </div>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {vitals.map((v, i) => (
             <motion.div
               key={v.label}
