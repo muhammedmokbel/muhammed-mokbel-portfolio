@@ -6,6 +6,7 @@ import About from './components/About'
 import Experience from './components/Experience'
 import Skills from './components/Skills'
 import MedicalViewerProject from './components/MedicalViewerProject'
+import EcommerceProject from './components/EcommerceProject'
 import Education from './components/Education'
 import Certifications from './components/Certifications'
 import Testimonials from './components/Testimonials'
@@ -23,6 +24,7 @@ export default function App() {
         <Experience />
         <Skills />
         <MedicalViewerProject />
+        <EcommerceProject />
         <Education />
         <Certifications />
         <Testimonials />

@@ -32,6 +32,9 @@ const certHighlights = [
   { label: 'TypeScript Expert', icon: '🔷' },
   { label: 'System Architecture', icon: '🏗️' },
   { label: 'Micro Frontend', icon: '🧩' },
+  { label: 'Backend & REST APIs', icon: '🖥️' },
+  { label: 'NoSQL Databases (MongoDB)', icon: '🍃' },
+  { label: 'SQL Databases', icon: '🗄️' },
 ];
 
 export default function Education() {

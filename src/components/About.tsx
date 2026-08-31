@@ -137,14 +137,15 @@ export default function About() {
           >
             <div className="space-y-4 text-gray-300 text-base leading-relaxed">
               <p>
-                I'm a <span className="text-white font-semibold">Senior Frontend Engineer</span> based in Cairo, Egypt, 
+                I'm a <span className="text-white font-semibold">Senior Software Engineer</span> based in Cairo, Egypt, 
                 with over <span className="text-purple-300 font-semibold">6 years of professional experience</span> building 
-                high-performance web applications for companies across Egypt and Saudi Arabia.
+                full-stack web applications for companies across Egypt and Saudi Arabia.
               </p>
               <p>
-                I specialize in <span className="text-white font-semibold">React, TypeScript, and Next.js</span> with a 
-                strong eye for architecture — from micro-frontends to PWAs. I care deeply about code quality, 
-                maintainability, and delivering real business value through great engineering.
+                On the frontend I specialize in <span className="text-white font-semibold">React, TypeScript, and Next.js</span> — 
+                crafting high-performance UIs, micro-frontends, and PWAs with a strong eye for architecture and user experience. 
+                On the backend I build <span className="text-white font-semibold">RESTful APIs with Node.js, Express, and MongoDB</span>, 
+                following layered architecture and repository patterns that keep code maintainable and scalable.
               </p>
               <p>
                 Beyond shipping features, I've led and mentored engineering teams, defined development standards, and 

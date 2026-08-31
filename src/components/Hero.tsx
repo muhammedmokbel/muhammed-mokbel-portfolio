@@ -77,7 +77,7 @@ export default function Hero() {
           className="mb-6"
         >
           <span className="text-xl md:text-2xl font-semibold text-gray-300">
-            Senior Frontend Engineer
+            Senior Software Engineer
           </span>
           <span className="mx-3 text-purple-400">·</span>
           <span className="text-xl md:text-2xl font-semibold text-gray-400">
@@ -92,7 +92,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Building high-performance, scalable web applications with a passion for
+          Building high-performance, scalable web applications and backend systems with a passion for
           clean architecture, great UX, and modern engineering practices.
         </motion.p>
 
