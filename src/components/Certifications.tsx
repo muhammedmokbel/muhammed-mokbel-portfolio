@@ -4,6 +4,20 @@ import { ExternalLink, Award } from 'lucide-react';
 
 const badges = [
   {
+    name: 'CRUD Operations in MongoDB',
+    issuer: 'MongoDB',
+    issued: 'Sep 2026',
+    image: 'https://images.credly.com/images/d8f7a9d6-dad9-40cc-b389-a343d2d72a9e/blob',
+    url: 'https://www.credly.com/users/mohamed-mokbel.d857596a',
+  },
+  {
+    name: 'MongoDB Indexing Design Fundamentals',
+    issuer: 'MongoDB',
+    issued: 'Sep 2026',
+    image: 'https://images.credly.com/images/27213be6-415d-411f-a69a-0171ca2c89f5/blob',
+    url: 'https://www.credly.com/users/mohamed-mokbel.d857596a',
+  },
+  {
     name: 'Node and Express Essentials',
     issuer: 'Coursera',
     issued: 'Jul 2026',
